@@ -1,0 +1,59 @@
+﻿@page "/courriers_ouverts"
+<h3>courriers_ouverts</h3>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau avec champs d'entrée</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 6px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tableau avec champs d'entrée</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Email</th>
+                <th>Téléphone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" name="nom" placeholder="Entrez le nom"></td>
+                <td><input type="text" name="email" placeholder="Entrez l'email"></td>
+                <td><input type="text" name="telephone" placeholder="Entrez le téléphone"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="nom" placeholder="Entrez le nom"></td>
+                <td><input type="text" name="email" placeholder="Entrez l'email"></td>
+                <td><input type="text" name="telephone" placeholder="Entrez le téléphone"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+@code {
+
+}

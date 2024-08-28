@@ -1,9 +1,96 @@
-﻿@page "/Courrier suivis"
-@rendermode InteractiveServer 
+﻿@page "/courrier_suivis"
+@inject NavigationManager Navigation
 <PageTitle>Courrier suivis</PageTitle>
+<h1 class="logo">LOGO</h1>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .logo {
+            margin-top: 60px;
+            margin-left: 425px;
+        }
+        .bouton {
+            width: 200px; /* Largeur du bouton */
+            height: 70px; /* Hauteur du bouton */
+            background-color: #009900; /* Couleur de fond du bouton */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            /*margin: 4px 2px;*/
+            margin-top : 50px;
+            margin-left :200px;
+            cursor: pointer;
+            border-radius: 5px; /* Arrondir les bords */
+            transition: box-shadow 0.3s ease-in-out; /* Transition pour l'effet d'ombre */
+        }
 
-<h1>Courrier suivis</h1>
+            .bouton:hover {
+                box-shadow: 0 4px 8px rgba(0, 0, 1, 0.8); /* Ombre ajoutée lors du survol */
+            }
+
+        .button {
+            background-color: #cc0000; /* Couleur de fond du bouton */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px; /* Arrondir les bords */
+            transition: box-shadow 0.3s ease-in-out; /* Transition pour l'effet d'ombre */
+        }
+
+            .button:hover {
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Ombre ajoutée lors du survol */
+            }
+
+        .buton {
+            width: 200px; /* Largeur du bouton */
+            height: 80px; /* Hauteur du bouton */
+            background-color: #ffff00; /* Couleur de fond du bouton */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px; /* Arrondir les bords */
+            transition: box-shadow 0.3s ease-in-out; /* Transition pour l'effet d'ombre */
+        }
+
+            .buton:hover {
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Ombre ajoutée lors du survol */
+            }
+
+       .button {
+         /*  font-family: 'Roboto', sans-serif;*/ /* Applique la police Roboto */
+        }
+    </style>
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <button onclick="NavigateToPage" class="bouton">En attente</button>
+    <button onclick="NavigateToPage" class="button">En traitement</button>
+    <button onclick="NavigateToPage" class="buton">Traité</button>
+</body>
+</html>
 
 @code {
-
+    private void NavigateToPage()
+    {
+        Navigation.NavigateTo("/archives");
+    }
 }

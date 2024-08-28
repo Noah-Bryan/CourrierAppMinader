@@ -1,0 +1,51 @@
+﻿@page "/archives"
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Horizontal</title>
+    <h3>Component</h3>
+</head>
+<body>
+    <style>
+        
+        .menu {
+            display: flex; /* Transformation en flexbox */
+            padding: 0; /* Suppression des marges internes */
+            background-color: #ccc; /* Couleur d'arrière-plan */
+            list-style-type: none; /* Suppression des puces */
+        }
+
+            .menu li {
+                margin: 0 60px; /* Espacement entre les éléments */
+            }
+
+            .menu a {
+                margin-top: 50%;
+                text-decoration: none; /* Suppression du soulignement */
+                color: #000; /* Couleur du texte */
+                padding: 10px 20px; /* Espacement interne */
+                display: block; /* Transformation en élément de type block */
+            }
+
+                .menu a:hover {
+                    background-color: #2e7ba6; /* Couleur de fond au survol */
+                }
+               /* .orientation a {
+                    margin-top : 50%;
+
+                }*/
+    </style>
+    <div class="orientation">
+    <ul class="menu">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </div>
+</body>
+</html>
+@code {
+
+}
